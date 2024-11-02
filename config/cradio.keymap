@@ -85,10 +85,10 @@
 
         num_arrow_layer {
             bindings = <
-&trans   &kp HOME        &kp UP    &kp END    &kp PG_UP    &trans        &kp N7        &kp N8        &kp N9        &trans
-&kp DEL  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp PG_DN    &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
-&trans   &trans          &trans    &trans     &trans       &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &bootloader
-                                   &trans     &kp ESC      &trans        &trans
+&kp INSERT      &kp HOME        &kp UP    &kp END    &kp PG_UP          &trans        &kp N7        &kp N8        &kp N9        &trans
+&kp DEL         &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp PG_DN          &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
+&kp LEFT_SHIFT  &trans          &trans    &trans     &kp PRINTSCREEN    &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &bootloader
+                                          &trans     &kp ESC            &kp ENTER     &trans
             >;
         };
 
