@@ -62,6 +62,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        setting {
+            bindings = <&lt 6 SPACE>;
+            key-positions = <30 31>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -112,10 +121,19 @@
 
         mouse {
             bindings = <
-&tog MOUSE  &mkp MB4  &mkp MCLK  &mkp MB5   &trans        &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &tog MOUSE
-&trans      &trans    &trans     &trans     &trans        &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-&trans      &trans    &trans     &trans     &trans        &trans          &mkp MB4        &mkp MCLK       &mkp MB5         &trans
-                                 &kp SPACE  &kp LSHIFT    &mkp LCLK       &mkp RCLK
+&tog MOUSE  &mkp MB4   &trans     &mkp MB5   &trans        &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &tog MOUSE
+&trans      &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans        &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
+&trans      &trans     &trans     &trans     &trans        &trans          &mkp MB4        &mkp MCLK       &mkp MB5         &trans
+                                  &kp SPACE  &kp LSHIFT    &mkp LCLK       &mkp RCLK
+            >;
+        };
+
+        settings {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
             >;
         };
     };
