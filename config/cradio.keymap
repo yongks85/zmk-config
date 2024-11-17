@@ -142,8 +142,8 @@
         num_arrow_layer {
             bindings = <
 &kp INSERT      &kp HOME        &kp UP    &kp END     &kp PG_UP          &kp SLASH     &kp N7        &kp N8        &kp N9        &kp MINUS
-&kp DEL         &kp LEFT_ARROW  &kp DOWN  &kp RIGHT   &kp PG_DN          &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
-&kp LEFT_SHIFT  &trans          &trans    &kp PERIOD  &kp PRINTSCREEN    &kp ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
+&kp DEL         &kp LEFT_ARROW  &kp DOWN  &kp RIGHT   &kp PG_DN          &kp NUMBER_0  &kp N4  &kp N5  &kp N6  &kp PLUS
+&kp LEFT_SHIFT  &trans          &trans    &kp PERIOD  &kp PRINTSCREEN    &kp ASTERISK  &kp N1  &kp N2  &kp N3  &kp EQUAL
                                           &trans      &kp ESC            &kp ENTER     &trans
             >;
         };
@@ -161,7 +161,7 @@
             bindings = <
 &bootloader  &trans  &kp C_BRI_UP  &trans  &bt BT_SEL 0    &bt BT_SEL 3  &trans  &kp C_VOL_UP  &trans  &bootloader
 &trans       &trans  &kp C_BRI_DN  &trans  &bt BT_SEL 1    &bt BT_SEL 4  &trans  &kp C_VOL_DN  &trans  &trans
-&trans       &trans  &out OUT_TOG  &trans  &bt BT_SEL 2    &bt BT_CLR    &trans  &kp K_MUTE    &trans  &trans
+&trans       &trans  &out OUT_TOG  &trans  &bt BT_SEL 2    &bt BT_CLR    &trans  &kp C_MUTE    &trans  &default_report
                                    &trans  &trans          &trans        &trans
             >;
         };
