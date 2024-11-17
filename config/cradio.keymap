@@ -69,6 +69,29 @@
             bindings = <&lt 6 SPACE>;
             key-positions = <30 31>;
         };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <7 8>;
+            layers = <0>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <27 28>;
+            layers = <0>;
+        };
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <22 21>;
+            layers = <0>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <1 2>;
+        };
     };
 
     keymap {
