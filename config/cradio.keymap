@@ -97,6 +97,16 @@
             bindings = <&lt 5 SPACE>;
             key-positions = <32 33>;
         };
+
+        func {
+            bindings = <&lt 1 SPACE>;
+            key-positions = <30 33>;
+        };
+
+        mouse {
+            bindings = <&lt 4 SPACE>;
+            key-positions = <31 32>;
+        };
     };
 
     keymap {
