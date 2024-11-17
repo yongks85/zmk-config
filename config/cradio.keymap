@@ -57,8 +57,8 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <RIG LEF>;
-            then-layer = <TRI>;
+            if-layers = <5 3>;
+            then-layer = <2>;
         };
     };
 
@@ -76,10 +76,10 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W       &kp E        &kp R        &kp T         &kp Y      &kp U        &kp I        &kp O       &kp P
-&kp A  &ht LALT S  &ht LCTRL D  &ht LGUI F   &kp G         &kp H      &ht RGUI J   &ht RCTRL K  &ht RALT L  &kp BSPC
-&kp Z  &kp X       &kp C        &kp V        &kp B         &kp N      &kp M        &kp COMMA    &kp DOT     &kp ENTER
-                                &lt LEF TAB  &kp LSHIFT    &kp SPACE  &lt RIG TAB
+&kp Q  &kp W       &kp E        &kp R       &kp T         &kp Y      &kp U       &kp I        &kp O       &kp P
+&kp A  &ht LALT S  &ht LCTRL D  &ht LGUI F  &kp G         &kp H      &ht RGUI J  &ht RCTRL K  &ht RALT L  &kp BSPC
+&kp Z  &kp X       &kp C        &kp V       &kp B         &kp N      &kp M       &kp COMMA    &kp DOT     &kp ENTER
+                                &lt 3 TAB   &kp LSHIFT    &kp SPACE  &lt 5 TAB
             >;
         };
 
@@ -88,43 +88,43 @@
 &kp Q  &kp W       &kp E       &kp R        &kp T         &kp Y      &kp U        &kp I       &kp O       &kp P
 &kp A  &ht LALT S  &ht LGUI D  &ht LCTRL F  &kp G         &kp H      &ht RCTRL J  &ht RGUI K  &ht RALT L  &kp BSPC
 &kp Z  &kp X       &kp C       &kp V        &kp B         &kp N      &kp M        &kp COMMA   &kp DOT     &kp ENTER
-                               &lt LEF TAB  &kp LSHIFT    &kp SPACE  &lt RIG TAB
-            >;
-        };
-
-        num_arrow_layer {
-            bindings = <
-&kp INSERT      &kp HOME        &kp UP    &kp END    &kp PG_UP          &trans        &kp N7        &kp N8        &kp N9        &trans
-&kp DEL         &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp PG_DN          &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
-&kp LEFT_SHIFT  &trans          &trans    &trans     &kp PRINTSCREEN    &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &bootloader
-                                          &trans     &kp ESC            &kp ENTER     &trans
-            >;
-        };
-
-        left_layer {
-            bindings = <
-&kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT          &kp CARET   &kp AMPS   &kp ASTRK  &kp GRAVE  &kp TILDE
-&kp DQT   &kp LBKT  &kp LBRC  &kp LPAR  &default_report    &kp FSLH    &kp MINUS  &kp EQUAL  &kp COLON  &kp SEMI
-&kp SQT   &kp RBKT  &kp RBRC  &kp RPAR  &bootloader        &kp BSLH    &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK
-                              &trans    &trans             &tog MOUSE  &trans
+                               &lt 3 TAB    &kp LSHIFT    &kp SPACE  &lt 5 TAB
             >;
         };
 
         tri_layer {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0    &bt BT_SEL 2  &out OUT_TOG   &tog WIN  &kp C_MUTE    &kp C_PREV
-&kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1    &bt BT_SEL 3  &kp C_BRI_UP   &trans    &kp C_VOL_UP  &kp C_PP
-&kp F9  &kp F10  &kp F11  &kp F12  &bt BT_CLR      &bt BT_SEL 4  &kp C_BRI_DEC  &trans    &kp C_VOL_DN  &kp C_NEXT
+&kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0    &bt BT_SEL 2  &out OUT_TOG   &tog 1  &kp C_MUTE    &kp C_PREV
+&kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1    &bt BT_SEL 3  &kp C_BRI_UP   &trans  &kp C_VOL_UP  &kp C_PP
+&kp F9  &kp F10  &kp F11  &kp F12  &bt BT_CLR      &bt BT_SEL 4  &kp C_BRI_DEC  &trans  &kp C_VOL_DN  &kp C_NEXT
                           &trans   &trans          &trans        &trans
+            >;
+        };
+
+        left_layer {
+            bindings = <
+&kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT          &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE  &kp TILDE
+&kp DQT   &kp LBKT  &kp LBRC  &kp LPAR  &default_report    &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON  &kp SEMI
+&kp SQT   &kp RBKT  &kp RBRC  &kp RPAR  &bootloader        &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK
+                              &trans    &trans             &tog 6     &trans
+            >;
+        };
+
+        num_arrow_layer {
+            bindings = <
+&kp INSERT      &kp HOME        &kp UP    &kp END    &kp PG_UP          &kp SLASH     &kp N7        &kp N8        &kp N9        &kp MINUS
+&kp DEL         &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp PG_DN          &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
+&kp LEFT_SHIFT  &trans          &trans    &trans     &kp PRINTSCREEN    &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
+                                          &trans     &kp ESC            &kp ENTER     &trans
             >;
         };
 
         mouse {
             bindings = <
-&tog MOUSE  &mkp MB4   &msc SCRL_UP     &mkp MB5   &trans        &trans     &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &tog MOUSE
-&trans      &mkp RCLK  &msc SCRL_DOWN   &mkp LCLK  &trans        &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-&trans      &trans     &mkp MCLK        &trans     &trans        &trans     &trans          &trans          &trans           &trans
-                                  &kp SPACE  &kp LSHIFT    &mkp LCLK  &mkp RCLK
+&tog 6  &mkp MB4   &msc SCRL_UP    &mkp MB5          &trans        &trans     &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &tog 6
+&trans  &mkp RCLK  &msc SCRL_DOWN  &mkp LCLK         &trans        &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
+&trans  &trans     &mkp MCLK       &trans            &trans        &trans     &trans          &trans          &trans           &trans
+                                   &kp LEFT_CONTROL  &kp LSHIFT    &mkp LCLK  &mkp RCLK
             >;
         };
 
